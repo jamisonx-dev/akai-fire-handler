@@ -1,12 +1,12 @@
 """
-akai_fire -- a Python library for the Akai Fire controller.
+akai_fire_handler -- a Python library for the Akai Fire controller.
 
 Full control of the 4x16 RGB pad grid, the 128x64 OLED, and all input
 (pads, four endless knobs, the SELECT encoder, and every button), over MIDI.
 
 Quick start:
 
-    from akai_fire import AkaiFire
+    from akai_fire_handler import AkaiFire
     fire = AkaiFire()
     fire.set_pad(0, 0, 127, 0, 0)
     fire.oled_text("hello", "akai fire")

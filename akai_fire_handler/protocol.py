@@ -1,5 +1,5 @@
 """
-akai_fire.protocol -- the Akai Fire wire protocol, as pure data + math.
+akai_fire_handler.protocol -- the Akai Fire wire protocol, as pure data + math.
 
 Nothing in this module does any I/O. It has no third-party dependencies (no
 mido, no Pillow) -- only the standard library. That is deliberate: this is the

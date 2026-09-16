@@ -1,4 +1,4 @@
-# python-akai-fire
+# akai-fire-handler
 
 A clean, dependency-light Python library for the **Akai Fire** controller —
 full control of the 4×16 RGB pad grid, the 128×64 OLED, and all input (pads,
@@ -8,7 +8,7 @@ It works on Linux, macOS, and Windows — anywhere `mido` + `python-rtmidi` run.
 No FL Studio required.
 
 ```python
-from akai_fire import AkaiFire
+from akai_fire_handler import AkaiFire
 
 fire = AkaiFire()                       # finds the Fire by its MIDI port name
 fire.clear_pads()
@@ -25,7 +25,7 @@ fire.run()                              # blocking input loop (Ctrl-C to stop)
 From GitHub (works today, any OS):
 
 ```bash
-pip install git+https://github.com/jamisonx-dev/python-akai-fire.git
+pip install git+https://github.com/jamisonx-dev/akai-fire-handler.git
 ```
 
 or from a clone:
@@ -37,7 +37,7 @@ pip install .
 Dependencies: `mido`, `python-rtmidi` (MIDI I/O), and `Pillow` (OLED text
 rendering) — all installed automatically.
 
-> A PyPI release (`pip install akai-fire`) is planned but **not yet published** —
+> A PyPI release (`pip install akai-fire-handler`) is planned but **not yet published** —
 > use the GitHub install above for now.
 
 ## Why this exists
@@ -51,7 +51,7 @@ usable in a real application.
 
 This library is extracted from a headless music instrument that has driven a
 physical Fire in daily use for months. The wire protocol in
-[`akai_fire/protocol.py`](akai_fire/protocol.py) is verified **byte-for-byte**
+[`akai_fire_handler/protocol.py`](akai_fire_handler/protocol.py) is verified **byte-for-byte**
 against that instrument's proven code (8192/8192 OLED pixels, the pad-LED SysEx
 over hundreds of random inputs, and every input constant — see
 [`tests/`](tests/)).
@@ -91,7 +91,7 @@ Knob deltas are signed (turn left = negative). Drive input with `run()`
 
 ### Low-level
 
-`akai_fire.protocol` is pure — no MIDI, no Pillow, just constants and the
+`akai_fire_handler.protocol` is pure — no MIDI, no Pillow, just constants and the
 SysEx byte builders (`pad_leds_sysex`, `oled_buffer_to_sysex`, `plot`,
 `classify_note`, `classify_cc`, `decode_relative`, …). Use it if you want to
 talk to the Fire through your own MIDI stack.
@@ -119,4 +119,7 @@ and high-level API) was captured and built for a real instrument.
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT — see [LICENSE](LICENSE). "Akai" and "Fire" are trademarks of inMusic /
+Akai Professional; this project is an independent, unofficial tool, not
+affiliated with or endorsed by them. The device name is used only to describe
+what the library talks to.

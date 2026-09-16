@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "akai-fire"
+name = "akai-fire-handler"
 version = "0.1.0"
 description = "Control the Akai Fire controller from Python: RGB pads, 128x64 OLED, and all input over MIDI."
 readme = "README.md"
@@ -25,11 +25,11 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/jamisonx-dev/python-akai-fire"
-Repository = "https://github.com/jamisonx-dev/python-akai-fire"
+Homepage = "https://github.com/jamisonx-dev/akai-fire-handler"
+Repository = "https://github.com/jamisonx-dev/akai-fire-handler"
 
 [project.optional-dependencies]
 test = ["pytest"]
 
 [tool.setuptools]
-packages = ["akai_fire"]
+packages = ["akai_fire_handler"]

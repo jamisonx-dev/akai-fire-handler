@@ -1,5 +1,5 @@
 """
-Correctness tests for akai_fire.protocol -- the wire format, proven byte for
+Correctness tests for akai_fire_handler.protocol -- the wire format, proven byte for
 byte with no hardware, no mido, and no Pillow.
 
 Run with pytest (`python -m pytest`) or directly (`python tests/test_protocol.py`).
@@ -8,7 +8,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-from akai_fire import protocol as P  # noqa: E402
+from akai_fire_handler import protocol as P  # noqa: E402
 
 
 # --- pad index <-> (row, col) --------------------------------------------- #

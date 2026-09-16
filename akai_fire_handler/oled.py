@@ -1,5 +1,5 @@
 """
-akai_fire.oled -- render text/graphics to the Akai Fire's 128x64 OLED.
+akai_fire_handler.oled -- render text/graphics to the Akai Fire's 128x64 OLED.
 
 This is the battle-tested rendering path from the reference instrument. It:
 

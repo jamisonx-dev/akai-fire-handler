@@ -1,6 +1,6 @@
 """Fill the 4x16 pad grid with a scrolling rainbow. Ctrl-C to stop."""
 import time
-from akai_fire import AkaiFire, hsv, N_ROWS, N_COLS
+from akai_fire_handler import AkaiFire, hsv, N_ROWS, N_COLS
 
 fire = AkaiFire()
 try:

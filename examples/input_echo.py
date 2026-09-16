@@ -2,7 +2,7 @@
 
 A minimal tour of the input callbacks. Ctrl-C to stop.
 """
-from akai_fire import AkaiFire, hsv
+from akai_fire_handler import AkaiFire, hsv
 
 fire = AkaiFire()
 fire.clear_pads()

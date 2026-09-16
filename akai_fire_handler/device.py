@@ -1,7 +1,7 @@
 """
-akai_fire.device -- a friendly high-level wrapper around one Akai Fire.
+akai_fire_handler.device -- a friendly high-level wrapper around one Akai Fire.
 
-    from akai_fire import AkaiFire
+    from akai_fire_handler import AkaiFire
 
     fire = AkaiFire()                     # finds the Fire by MIDI port name
     fire.clear_pads()
