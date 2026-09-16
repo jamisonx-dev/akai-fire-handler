@@ -22,8 +22,10 @@ fire.run()                              # blocking input loop (Ctrl-C to stop)
 
 ## Install
 
+From GitHub (works today, any OS):
+
 ```bash
-pip install akai-fire
+pip install git+https://github.com/jamisonx-dev/python-akai-fire.git
 ```
 
 or from a clone:
@@ -33,7 +35,10 @@ pip install .
 ```
 
 Dependencies: `mido`, `python-rtmidi` (MIDI I/O), and `Pillow` (OLED text
-rendering).
+rendering) — all installed automatically.
+
+> A PyPI release (`pip install akai-fire`) is planned but **not yet published** —
+> use the GitHub install above for now.
 
 ## Why this exists
 
