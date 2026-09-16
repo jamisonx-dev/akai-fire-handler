@@ -22,23 +22,18 @@ fire.run()                              # blocking input loop (Ctrl-C to stop)
 
 ## Install
 
-From GitHub (works today, any OS):
+```bash
+pip install akai-fire-handler
+```
+
+Works on Windows, macOS, and Linux. Dependencies — `mido`, `python-rtmidi`
+(MIDI I/O), and `Pillow` (OLED text rendering) — install automatically.
+
+Or the latest straight from source:
 
 ```bash
 pip install git+https://github.com/jamisonx-dev/akai-fire-handler.git
 ```
-
-or from a clone:
-
-```bash
-pip install .
-```
-
-Dependencies: `mido`, `python-rtmidi` (MIDI I/O), and `Pillow` (OLED text
-rendering) — all installed automatically.
-
-> A PyPI release (`pip install akai-fire-handler`) is planned but **not yet published** —
-> use the GitHub install above for now.
 
 ## Why this exists
 
