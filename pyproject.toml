@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akai-fire"
+version = "0.1.0"
+description = "Control the Akai Fire controller from Python: RGB pads, 128x64 OLED, and all input over MIDI."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "jamisonx-dev" }]
+keywords = ["akai", "fire", "midi", "controller", "oled", "music", "hardware"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Sound/Audio :: MIDI",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "mido>=1.2",
+    "python-rtmidi>=1.4",
+    "Pillow>=8.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/jamisonx-dev/python-akai-fire"
+Repository = "https://github.com/jamisonx-dev/python-akai-fire"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["akai_fire"]
