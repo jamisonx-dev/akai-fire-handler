@@ -1,6 +1,6 @@
 # Akai Fire Handler
 
-I was deeply irritated that this device was released in a completely locked down state and then abandoned. I used Claude to look online and figure out how to bypass the nonsense and have it work with whatever. This draws heavily from work already publicly available, putting it all together and making a handler program to do it all for you automatically. 
+Created in response to being deeply irritated that the Akai Fire controller for FL Studio was released in a completely locked down state and then abandoned. I used Claude to look online and figure out how to bypass the nonsense and have it work with whatever. This draws heavily from work already publicly available, putting it all together and making a handler program to do it all for you automatically. 
 
 This was/is the first iteration and relies on being hooked to a host (such as the ORC project) and is essentially a blank slate for whatever you want. The follow-up is also available in my shared work here, for anyone interested: the Fire as a fully-featured standalone sequencer/controller with internal memory & song mode.
 
